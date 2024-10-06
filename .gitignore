@@ -114,3 +114,9 @@ build
 .strapi-updater.json
 .strapi-cloud.json
 .env.example
+.editorconfig
+.eslintrc
+.strapi*
+.eslintignore
+yarn.lock
+jsconfig.json
