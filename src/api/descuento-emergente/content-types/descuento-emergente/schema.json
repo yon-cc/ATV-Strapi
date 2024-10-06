@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "descuento_emergentes",
+  "info": {
+    "singularName": "descuento-emergente",
+    "pluralName": "descuento-emergentes",
+    "displayName": "Descuento emergente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ImagenURL": {
+      "type": "string"
+    },
+    "Ruta": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "singularName": "hotel",
+    "pluralName": "hotels",
+    "displayName": "Hotel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "string"
+    },
+    "Precio": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Habitaciones": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tarjeta.tarjeta"
+    },
+    "Restaurantes": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tarjeta.tarjeta"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ciudad_latams",
+  "info": {
+    "singularName": "ciudad-latam",
+    "pluralName": "ciudad-latams",
+    "displayName": "Ciudad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Slogan": {
+      "type": "text"
+    },
+    "Actividades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tarjeta.tarjeta"
+    },
+    "Hoteles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hotel.hotel"
+    },
+    "Precio": {
+      "type": "string"
+    },
+    "ImagenPrincipal": {
+      "type": "string"
+    },
+    "ImagenTarjeta": {
+      "type": "string"
+    },
+    "DestinoPlaya": {
+      "type": "boolean"
+    },
+    "SurAmerica": {
+      "type": "boolean"
+    },
+    "PreguntasFrecuentes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pregunta-frecuente.pregunta-frecuente"
+    },
+    "InformacionGeneral": {
+      "type": "text"
+    }
+  }
+}

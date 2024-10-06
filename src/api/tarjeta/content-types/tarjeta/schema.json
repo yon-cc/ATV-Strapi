@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarjetas",
+  "info": {
+    "singularName": "tarjeta",
+    "pluralName": "tarjetas",
+    "displayName": "Tarjeta"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Imagen": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "Lista": {
+      "type": "enumeration",
+      "enum": [
+        "one ",
+        "two"
+      ]
+    }
+  }
+}

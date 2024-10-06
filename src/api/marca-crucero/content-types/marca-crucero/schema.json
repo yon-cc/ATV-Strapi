@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marca_cruceros",
+  "info": {
+    "singularName": "marca-crucero",
+    "pluralName": "marca-cruceros",
+    "displayName": "Marca crucero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "ImagenURL": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "Cruceros": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::crucero.crucero"
+    },
+    "ImagenSecundaria": {
+      "type": "string"
+    },
+    "PreguntasFrecuentes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pregunta-frecuente.pregunta-frecuente"
+    }
+  }
+}
