@@ -1043,9 +1043,9 @@ export interface ApiHotelHotel extends Schema.CollectionType {
       'oneToMany',
       'api::habitacion.habitacion'
     >;
-    Restaurantes: Attribute.Relation<
+    restaurantes: Attribute.Relation<
       'api::hotel.hotel',
-      'oneToOne',
+      'oneToMany',
       'api::restaurante.restaurante'
     >;
     createdAt: Attribute.DateTime;

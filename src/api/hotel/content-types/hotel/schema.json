@@ -29,9 +29,9 @@
       "relation": "oneToMany",
       "target": "api::habitacion.habitacion"
     },
-    "Restaurantes": {
+    "restaurantes": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::restaurante.restaurante"
     }
   }
