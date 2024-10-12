@@ -992,6 +992,7 @@ export interface ApiHabitacionHabitacion extends Schema.CollectionType {
     singularName: 'habitacion';
     pluralName: 'habitacions';
     displayName: 'Habitacion';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1002,6 +1003,7 @@ export interface ApiHabitacionHabitacion extends Schema.CollectionType {
     Tamano: Attribute.String;
     Vista: Attribute.String;
     Capacidad: Attribute.String;
+    ImagenURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1147,6 +1149,7 @@ export interface ApiRestauranteRestaurante extends Schema.CollectionType {
     singularName: 'restaurante';
     pluralName: 'restaurantes';
     displayName: 'Restaurante';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1156,6 +1159,7 @@ export interface ApiRestauranteRestaurante extends Schema.CollectionType {
     Tematica: Attribute.String;
     Horario: Attribute.String;
     InfoAdicional: Attribute.String;
+    ImagenURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
