@@ -1048,6 +1048,7 @@ export interface ApiHotelHotel extends Schema.CollectionType {
       'oneToMany',
       'api::restaurante.restaurante'
     >;
+    ImagenURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
