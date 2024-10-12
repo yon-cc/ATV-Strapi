@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habitacions",
+  "info": {
+    "singularName": "habitacion",
+    "pluralName": "habitacions",
+    "displayName": "Habitacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "Cama": {
+      "type": "string"
+    },
+    "Tamano": {
+      "type": "string"
+    },
+    "Vista": {
+      "type": "string"
+    },
+    "Capacidad": {
+      "type": "string"
+    }
+  }
+}

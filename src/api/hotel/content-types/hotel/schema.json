@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hotel",
     "pluralName": "hotels",
-    "displayName": "Hotel"
+    "displayName": "Hotel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,12 +27,12 @@
     "Habitaciones": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::tarjeta.tarjeta"
+      "target": "api::habitacion.habitacion"
     },
     "Restaurantes": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::tarjeta.tarjeta"
+      "target": "api::restaurante.restaurante"
     }
   }
 }

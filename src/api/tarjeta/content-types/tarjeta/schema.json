@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tarjeta",
     "pluralName": "tarjetas",
-    "displayName": "Tarjeta"
+    "displayName": "Tarjeta",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,13 +20,6 @@
     },
     "Descripcion": {
       "type": "string"
-    },
-    "Lista": {
-      "type": "enumeration",
-      "enum": [
-        "one ",
-        "two"
-      ]
     }
   }
 }
