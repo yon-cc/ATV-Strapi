@@ -883,6 +883,7 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
     singularName: 'crucero';
     pluralName: 'cruceros';
     displayName: 'Crucero';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -901,6 +902,7 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
     >;
     Caracteristicas: Attribute.RichText;
     ImagenURL: Attribute.String;
+    DetalleURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

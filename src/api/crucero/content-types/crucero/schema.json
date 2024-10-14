@@ -4,7 +4,8 @@
   "info": {
     "singularName": "crucero",
     "pluralName": "cruceros",
-    "displayName": "Crucero"
+    "displayName": "Crucero",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,9 @@
       "type": "richtext"
     },
     "ImagenURL": {
+      "type": "string"
+    },
+    "DetalleURL": {
       "type": "string"
     }
   }
