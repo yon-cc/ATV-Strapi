@@ -1073,6 +1073,7 @@ export interface ApiMarcaCruceroMarcaCrucero extends Schema.CollectionType {
     singularName: 'marca-crucero';
     pluralName: 'marca-cruceros';
     displayName: 'Marca crucero';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1092,6 +1093,7 @@ export interface ApiMarcaCruceroMarcaCrucero extends Schema.CollectionType {
       'oneToMany',
       'api::pregunta-frecuente.pregunta-frecuente'
     >;
+    LogoMarca: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
