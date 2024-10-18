@@ -835,13 +835,14 @@ export interface ApiCircuitoCiudadCircuitoCiudad extends Schema.CollectionType {
     singularName: 'circuito-ciudad';
     pluralName: 'circuito-ciudads';
     displayName: 'CircuitoCiudad';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Nombre: Attribute.String;
-    Slogan: Attribute.String;
+    Descripcion: Attribute.Text;
     Imagen: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

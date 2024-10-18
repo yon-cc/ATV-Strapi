@@ -4,7 +4,8 @@
   "info": {
     "singularName": "circuito-ciudad",
     "pluralName": "circuito-ciudads",
-    "displayName": "CircuitoCiudad"
+    "displayName": "CircuitoCiudad",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +15,8 @@
     "Nombre": {
       "type": "string"
     },
-    "Slogan": {
-      "type": "string"
+    "Descripcion": {
+      "type": "text"
     },
     "Imagen": {
       "type": "string"
