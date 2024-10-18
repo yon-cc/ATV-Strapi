@@ -794,18 +794,23 @@ export interface ApiCircuitoCircuito extends Schema.CollectionType {
     singularName: 'circuito';
     pluralName: 'circuitos';
     displayName: 'Circuito';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Titulo: Attribute.String;
-    ListaCiudades: Attribute.RichText;
     Duracion: Attribute.String;
     Coste: Attribute.String;
     Detalle: Attribute.String;
     ArchivoInformacion: Attribute.String;
     ImagenURL: Attribute.String;
+    ciudades: Attribute.Relation<
+      'api::circuito.circuito',
+      'oneToMany',
+      'api::circuito-ciudad.circuito-ciudad'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -817,6 +822,38 @@ export interface ApiCircuitoCircuito extends Schema.CollectionType {
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::circuito.circuito',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiCircuitoCiudadCircuitoCiudad extends Schema.CollectionType {
+  collectionName: 'circuito_ciudads';
+  info: {
+    singularName: 'circuito-ciudad';
+    pluralName: 'circuito-ciudads';
+    displayName: 'CircuitoCiudad';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Nombre: Attribute.String;
+    Slogan: Attribute.String;
+    Imagen: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::circuito-ciudad.circuito-ciudad',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::circuito-ciudad.circuito-ciudad',
       'oneToOne',
       'admin::user'
     > &
@@ -1235,6 +1272,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::circuito.circuito': ApiCircuitoCircuito;
+      'api::circuito-ciudad.circuito-ciudad': ApiCircuitoCiudadCircuitoCiudad;
       'api::ciudad-latam.ciudad-latam': ApiCiudadLatamCiudadLatam;
       'api::crucero.crucero': ApiCruceroCrucero;
       'api::descuento.descuento': ApiDescuentoDescuento;

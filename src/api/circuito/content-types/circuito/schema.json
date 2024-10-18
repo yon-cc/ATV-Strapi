@@ -4,7 +4,8 @@
   "info": {
     "singularName": "circuito",
     "pluralName": "circuitos",
-    "displayName": "Circuito"
+    "displayName": "Circuito",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,9 +14,6 @@
   "attributes": {
     "Titulo": {
       "type": "string"
-    },
-    "ListaCiudades": {
-      "type": "richtext"
     },
     "Duracion": {
       "type": "string"
@@ -31,6 +29,11 @@
     },
     "ImagenURL": {
       "type": "string"
+    },
+    "ciudades": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::circuito-ciudad.circuito-ciudad"
     }
   }
 }
