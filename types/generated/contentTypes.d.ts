@@ -1088,7 +1088,22 @@ export interface ApiHotelHotel extends Schema.CollectionType {
       'oneToMany',
       'api::restaurante.restaurante'
     >;
-    ImagenURL: Attribute.String;
+    ImagenCarousel1: Attribute.String;
+    ImagenCarousel2: Attribute.String;
+    ImagenCarousel3: Attribute.String;
+    HabitacionBento1: Attribute.String;
+    HabitacionBento2: Attribute.String;
+    HabitacionBento3: Attribute.String;
+    PiscinaBento1: Attribute.String;
+    PiscinaBento2: Attribute.String;
+    PlayaBento1: Attribute.String;
+    PlayaBento2: Attribute.String;
+    BarBento1: Attribute.String;
+    BarBento2: Attribute.String;
+    BarBento3: Attribute.String;
+    RestauranteBento1: Attribute.String;
+    RestauranteBento2: Attribute.String;
+    RestauranteBento3: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

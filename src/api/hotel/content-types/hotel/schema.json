@@ -34,7 +34,52 @@
       "relation": "oneToMany",
       "target": "api::restaurante.restaurante"
     },
-    "ImagenURL": {
+    "ImagenCarousel1": {
+      "type": "string"
+    },
+    "ImagenCarousel2": {
+      "type": "string"
+    },
+    "ImagenCarousel3": {
+      "type": "string"
+    },
+    "HabitacionBento1": {
+      "type": "string"
+    },
+    "HabitacionBento2": {
+      "type": "string"
+    },
+    "HabitacionBento3": {
+      "type": "string"
+    },
+    "PiscinaBento1": {
+      "type": "string"
+    },
+    "PiscinaBento2": {
+      "type": "string"
+    },
+    "PlayaBento1": {
+      "type": "string"
+    },
+    "PlayaBento2": {
+      "type": "string"
+    },
+    "BarBento1": {
+      "type": "string"
+    },
+    "BarBento2": {
+      "type": "string"
+    },
+    "BarBento3": {
+      "type": "string"
+    },
+    "RestauranteBento1": {
+      "type": "string"
+    },
+    "RestauranteBento2": {
+      "type": "string"
+    },
+    "RestauranteBento3": {
       "type": "string"
     }
   }
