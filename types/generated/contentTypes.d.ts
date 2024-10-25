@@ -1076,7 +1076,7 @@ export interface ApiHotelHotel extends Schema.CollectionType {
   attributes: {
     Nombre: Attribute.String;
     Logo: Attribute.String;
-    Precio: Attribute.String;
+    Precio: Attribute.Text;
     Descripcion: Attribute.Text;
     Habitaciones: Attribute.Relation<
       'api::hotel.hotel',

@@ -19,7 +19,7 @@
       "type": "string"
     },
     "Precio": {
-      "type": "string"
+      "type": "text"
     },
     "Descripcion": {
       "type": "text"
