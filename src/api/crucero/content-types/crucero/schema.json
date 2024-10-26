@@ -15,23 +15,19 @@
     "Nombre": {
       "type": "string"
     },
-    "Actividades": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tarjeta.tarjeta"
-    },
-    "Restaurantes": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::tarjeta.tarjeta"
-    },
-    "Caracteristicas": {
-      "type": "richtext"
-    },
     "ImagenURL": {
       "type": "string"
     },
-    "DetalleURL": {
+    "Precio": {
+      "type": "string"
+    },
+    "CruceroNombre": {
+      "type": "string"
+    },
+    "Destino": {
+      "type": "string"
+    },
+    "VideoURL": {
       "type": "string"
     }
   }

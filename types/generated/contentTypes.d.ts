@@ -928,19 +928,11 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
   };
   attributes: {
     Nombre: Attribute.String;
-    Actividades: Attribute.Relation<
-      'api::crucero.crucero',
-      'oneToMany',
-      'api::tarjeta.tarjeta'
-    >;
-    Restaurantes: Attribute.Relation<
-      'api::crucero.crucero',
-      'oneToOne',
-      'api::tarjeta.tarjeta'
-    >;
-    Caracteristicas: Attribute.RichText;
     ImagenURL: Attribute.String;
-    DetalleURL: Attribute.String;
+    Precio: Attribute.String;
+    CruceroNombre: Attribute.String;
+    Destino: Attribute.String;
+    VideoURL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
