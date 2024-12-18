@@ -933,6 +933,7 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
     CruceroNombre: Attribute.String;
     Destino: Attribute.String;
     VideoURL: Attribute.String;
+    Salida: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1011,6 +1012,43 @@ export interface ApiDescuentoEmergenteDescuentoEmergente
       Attribute.Private;
     updatedBy: Attribute.Relation<
       'api::descuento-emergente.descuento-emergente',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
+  collectionName: 'dia_paquetes';
+  info: {
+    singularName: 'dia-paquete';
+    pluralName: 'dia-paquetes';
+    displayName: 'DiaPaquete';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    NumeroDia: Attribute.Integer;
+    Titulo: Attribute.String;
+    Descripcion: Attribute.String;
+    ImagenURL: Attribute.String;
+    Incluye: Attribute.Text;
+    NoIncluye: Attribute.String;
+    Horario: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::dia-paquete.dia-paquete',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::dia-paquete.dia-paquete',
       'oneToOne',
       'admin::user'
     > &
@@ -1114,44 +1152,40 @@ export interface ApiHotelHotel extends Schema.CollectionType {
   };
 }
 
-export interface ApiMarcaCruceroMarcaCrucero extends Schema.CollectionType {
-  collectionName: 'marca_cruceros';
+export interface ApiPaquetePaquete extends Schema.CollectionType {
+  collectionName: 'paquetes';
   info: {
-    singularName: 'marca-crucero';
-    pluralName: 'marca-cruceros';
-    displayName: 'Marca crucero';
+    singularName: 'paquete';
+    pluralName: 'paquetes';
+    displayName: 'Paquete';
     description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Nombre: Attribute.String;
-    ImagenURL: Attribute.String;
-    Descripcion: Attribute.Text;
-    Cruceros: Attribute.Relation<
-      'api::marca-crucero.marca-crucero',
+    Ciudad: Attribute.String;
+    TarifaAdulto: Attribute.String;
+    TarifaNino: Attribute.String;
+    Categoria: Attribute.String;
+    DiaPaquetes: Attribute.Relation<
+      'api::paquete.paquete',
       'oneToMany',
-      'api::crucero.crucero'
+      'api::dia-paquete.dia-paquete'
     >;
-    ImagenSecundaria: Attribute.String;
-    PreguntasFrecuentes: Attribute.Relation<
-      'api::marca-crucero.marca-crucero',
-      'oneToMany',
-      'api::pregunta-frecuente.pregunta-frecuente'
-    >;
-    LogoMarca: Attribute.String;
+    Incluye: Attribute.Text;
+    NoIncluye: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::marca-crucero.marca-crucero',
+      'api::paquete.paquete',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::marca-crucero.marca-crucero',
+      'api::paquete.paquete',
       'oneToOne',
       'admin::user'
     > &
@@ -1285,9 +1319,10 @@ declare module '@strapi/types' {
       'api::crucero.crucero': ApiCruceroCrucero;
       'api::descuento.descuento': ApiDescuentoDescuento;
       'api::descuento-emergente.descuento-emergente': ApiDescuentoEmergenteDescuentoEmergente;
+      'api::dia-paquete.dia-paquete': ApiDiaPaqueteDiaPaquete;
       'api::habitacion.habitacion': ApiHabitacionHabitacion;
       'api::hotel.hotel': ApiHotelHotel;
-      'api::marca-crucero.marca-crucero': ApiMarcaCruceroMarcaCrucero;
+      'api::paquete.paquete': ApiPaquetePaquete;
       'api::pregunta-frecuente.pregunta-frecuente': ApiPreguntaFrecuentePreguntaFrecuente;
       'api::restaurante.restaurante': ApiRestauranteRestaurante;
       'api::tarjeta.tarjeta': ApiTarjetaTarjeta;

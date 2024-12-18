@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paquetes",
+  "info": {
+    "singularName": "paquete",
+    "pluralName": "paquetes",
+    "displayName": "Paquete",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ciudad": {
+      "type": "string"
+    },
+    "TarifaAdulto": {
+      "type": "string"
+    },
+    "TarifaNino": {
+      "type": "string"
+    },
+    "Categoria": {
+      "type": "string"
+    },
+    "DiaPaquetes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dia-paquete.dia-paquete"
+    },
+    "Incluye": {
+      "type": "text"
+    },
+    "NoIncluye": {
+      "type": "text"
+    }
+  }
+}

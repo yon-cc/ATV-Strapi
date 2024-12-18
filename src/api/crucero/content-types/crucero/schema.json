@@ -29,6 +29,9 @@
     },
     "VideoURL": {
       "type": "string"
+    },
+    "Salida": {
+      "type": "string"
     }
   }
 }

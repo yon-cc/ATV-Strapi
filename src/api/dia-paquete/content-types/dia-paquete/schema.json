@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dia_paquetes",
+  "info": {
+    "singularName": "dia-paquete",
+    "pluralName": "dia-paquetes",
+    "displayName": "DiaPaquete",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NumeroDia": {
+      "type": "integer"
+    },
+    "Titulo": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "string"
+    },
+    "ImagenURL": {
+      "type": "string"
+    },
+    "Incluye": {
+      "type": "text"
+    },
+    "NoIncluye": {
+      "type": "string"
+    },
+    "Horario": {
+      "type": "text"
+    }
+  }
+}
