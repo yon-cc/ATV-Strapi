@@ -50,6 +50,11 @@
     },
     "InformacionGeneral": {
       "type": "text"
+    },
+    "Paquete": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paquete.paquete"
     }
   }
 }

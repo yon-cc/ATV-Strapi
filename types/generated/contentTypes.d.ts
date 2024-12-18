@@ -897,6 +897,11 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
       'api::pregunta-frecuente.pregunta-frecuente'
     >;
     InformacionGeneral: Attribute.Text;
+    Paquete: Attribute.Relation<
+      'api::ciudad-latam.ciudad-latam',
+      'oneToOne',
+      'api::paquete.paquete'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
