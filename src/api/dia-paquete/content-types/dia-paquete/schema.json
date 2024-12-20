@@ -19,7 +19,7 @@
       "type": "string"
     },
     "Descripcion": {
-      "type": "string"
+      "type": "text"
     },
     "ImagenURL": {
       "type": "string"

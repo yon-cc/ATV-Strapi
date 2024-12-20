@@ -1038,7 +1038,7 @@ export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
   attributes: {
     NumeroDia: Attribute.Integer;
     Titulo: Attribute.String;
-    Descripcion: Attribute.String;
+    Descripcion: Attribute.Text;
     ImagenURL: Attribute.String;
     Incluye: Attribute.Text;
     NoIncluye: Attribute.String;
