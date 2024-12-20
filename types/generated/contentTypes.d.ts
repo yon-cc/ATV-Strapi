@@ -902,6 +902,7 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
       'oneToOne',
       'api::paquete.paquete'
     >;
+    VideoBanner: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

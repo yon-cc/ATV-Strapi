@@ -55,6 +55,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::paquete.paquete"
+    },
+    "VideoBanner": {
+      "type": "string"
     }
   }
 }
