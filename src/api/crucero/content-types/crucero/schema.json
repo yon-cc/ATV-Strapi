@@ -35,6 +35,9 @@
     },
     "Recorrido": {
       "type": "string"
+    },
+    "Marca": {
+      "type": "string"
     }
   }
 }

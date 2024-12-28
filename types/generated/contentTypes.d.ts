@@ -941,6 +941,7 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
     VideoURL: Attribute.String;
     Salida: Attribute.String;
     Recorrido: Attribute.String;
+    Marca: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
