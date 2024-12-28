@@ -32,6 +32,9 @@
     },
     "Salida": {
       "type": "string"
+    },
+    "Recorrido": {
+      "type": "string"
     }
   }
 }
