@@ -1173,7 +1173,7 @@ export interface ApiPaquetePaquete extends Schema.CollectionType {
     Ciudad: Attribute.String;
     TarifaAdulto: Attribute.String;
     TarifaNino: Attribute.String;
-    Categoria: Attribute.String;
+    Categoria: Attribute.Text;
     DiaPaquetes: Attribute.Relation<
       'api::paquete.paquete',
       'oneToMany',
