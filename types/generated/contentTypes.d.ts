@@ -1042,7 +1042,7 @@ export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
     Descripcion: Attribute.Text;
     ImagenURL: Attribute.String;
     Incluye: Attribute.Text;
-    NoIncluye: Attribute.String;
+    NoIncluye: Attribute.Text;
     Horario: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

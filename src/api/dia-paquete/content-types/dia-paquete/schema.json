@@ -28,7 +28,7 @@
       "type": "text"
     },
     "NoIncluye": {
-      "type": "string"
+      "type": "text"
     },
     "Horario": {
       "type": "text"
