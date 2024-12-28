@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boda_ciudads",
+  "info": {
+    "singularName": "boda-ciudad",
+    "pluralName": "boda-ciudads",
+    "displayName": "Boda Ciudad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "Descripcion": {
+      "type": "text"
+    },
+    "LugaresDestacados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tarjeta.tarjeta"
+    },
+    "Actividades": {
+      "type": "text"
+    }
+  }
+}

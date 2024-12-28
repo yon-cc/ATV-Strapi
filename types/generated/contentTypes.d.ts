@@ -788,6 +788,44 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBodaCiudadBodaCiudad extends Schema.CollectionType {
+  collectionName: 'boda_ciudads';
+  info: {
+    singularName: 'boda-ciudad';
+    pluralName: 'boda-ciudads';
+    displayName: 'Boda Ciudad';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Titulo: Attribute.String;
+    Descripcion: Attribute.Text;
+    LugaresDestacados: Attribute.Relation<
+      'api::boda-ciudad.boda-ciudad',
+      'oneToMany',
+      'api::tarjeta.tarjeta'
+    >;
+    Actividades: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::boda-ciudad.boda-ciudad',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::boda-ciudad.boda-ciudad',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiCircuitoCircuito extends Schema.CollectionType {
   collectionName: 'circuitos';
   info: {
@@ -1321,6 +1359,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::boda-ciudad.boda-ciudad': ApiBodaCiudadBodaCiudad;
       'api::circuito.circuito': ApiCircuitoCircuito;
       'api::circuito-ciudad.circuito-ciudad': ApiCircuitoCiudadCircuitoCiudad;
       'api::ciudad-latam.ciudad-latam': ApiCiudadLatamCiudadLatam;
