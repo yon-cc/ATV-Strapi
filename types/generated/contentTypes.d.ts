@@ -1082,42 +1082,6 @@ export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
   };
 }
 
-export interface ApiHabitacionHabitacion extends Schema.CollectionType {
-  collectionName: 'habitacions';
-  info: {
-    singularName: 'habitacion';
-    pluralName: 'habitacions';
-    displayName: 'Habitacion';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Nombre: Attribute.String;
-    Cama: Attribute.String;
-    Tamano: Attribute.String;
-    Vista: Attribute.String;
-    Capacidad: Attribute.String;
-    ImagenURL: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::habitacion.habitacion',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::habitacion.habitacion',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiHotelHotel extends Schema.CollectionType {
   collectionName: 'hotels';
   info: {
@@ -1242,41 +1206,6 @@ export interface ApiPreguntaFrecuentePreguntaFrecuente
   };
 }
 
-export interface ApiRestauranteRestaurante extends Schema.CollectionType {
-  collectionName: 'restaurantes';
-  info: {
-    singularName: 'restaurante';
-    pluralName: 'restaurantes';
-    displayName: 'Restaurante';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    Nombre: Attribute.String;
-    Tematica: Attribute.String;
-    Horario: Attribute.String;
-    InfoAdicional: Attribute.String;
-    ImagenURL: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::restaurante.restaurante',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::restaurante.restaurante',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiTarjetaTarjeta extends Schema.CollectionType {
   collectionName: 'tarjetas';
   info: {
@@ -1336,11 +1265,9 @@ declare module '@strapi/types' {
       'api::descuento.descuento': ApiDescuentoDescuento;
       'api::descuento-emergente.descuento-emergente': ApiDescuentoEmergenteDescuentoEmergente;
       'api::dia-paquete.dia-paquete': ApiDiaPaqueteDiaPaquete;
-      'api::habitacion.habitacion': ApiHabitacionHabitacion;
       'api::hotel.hotel': ApiHotelHotel;
       'api::paquete.paquete': ApiPaquetePaquete;
       'api::pregunta-frecuente.pregunta-frecuente': ApiPreguntaFrecuentePreguntaFrecuente;
-      'api::restaurante.restaurante': ApiRestauranteRestaurante;
       'api::tarjeta.tarjeta': ApiTarjetaTarjeta;
     }
   }
