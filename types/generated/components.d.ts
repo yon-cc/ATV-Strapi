@@ -11,7 +11,7 @@ export interface ContenidoCiudadPaquete extends Schema.Component {
     Paquete: Attribute.Relation<
       'contenido-ciudad.paquete',
       'oneToOne',
-      'api::boda-ciudad.boda-ciudad'
+      'api::paquete.paquete'
     >;
   };
 }

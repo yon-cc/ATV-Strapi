@@ -10,7 +10,7 @@
     "Paquete": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::boda-ciudad.boda-ciudad"
+      "target": "api::paquete.paquete"
     }
   }
 }
