@@ -914,21 +914,10 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
   attributes: {
     Nombre: Attribute.String;
     Slogan: Attribute.Text;
-    Hoteles: Attribute.Relation<
-      'api::ciudad-latam.ciudad-latam',
-      'oneToMany',
-      'api::hotel.hotel'
-    >;
     Precio: Attribute.String;
     ImagenPrincipal: Attribute.String;
     ImagenTarjeta: Attribute.String;
-    DestinoPlaya: Attribute.Boolean;
     InformacionGeneral: Attribute.Text;
-    Paquete: Attribute.Relation<
-      'api::ciudad-latam.ciudad-latam',
-      'oneToOne',
-      'api::paquete.paquete'
-    >;
     VideoBanner: Attribute.String;
     Contenido: Attribute.DynamicZone<
       ['contenido-ciudad.paquete', 'contenido-ciudad.hoteles']

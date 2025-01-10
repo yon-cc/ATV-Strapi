@@ -18,11 +18,6 @@
     "Slogan": {
       "type": "text"
     },
-    "Hoteles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::hotel.hotel"
-    },
     "Precio": {
       "type": "string"
     },
@@ -32,16 +27,8 @@
     "ImagenTarjeta": {
       "type": "string"
     },
-    "DestinoPlaya": {
-      "type": "boolean"
-    },
     "InformacionGeneral": {
       "type": "text"
-    },
-    "Paquete": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::paquete.paquete"
     },
     "VideoBanner": {
       "type": "string"
