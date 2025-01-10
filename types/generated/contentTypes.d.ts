@@ -1050,7 +1050,7 @@ export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
   info: {
     singularName: 'dia-paquete';
     pluralName: 'dia-paquetes';
-    displayName: 'Dia Paquete';
+    displayName: 'Paquete Dia';
     description: '';
   };
   options: {
@@ -1087,7 +1087,7 @@ export interface ApiHotelHotel extends Schema.CollectionType {
   info: {
     singularName: 'hotel';
     pluralName: 'hotels';
-    displayName: 'Hotel';
+    displayName: 'Ciudad Hotel';
     description: '';
   };
   options: {
@@ -1211,7 +1211,7 @@ export interface ApiTarjetaTarjeta extends Schema.CollectionType {
   info: {
     singularName: 'tarjeta';
     pluralName: 'tarjetas';
-    displayName: 'Tarjeta';
+    displayName: 'Boda Lugares Destacados';
     description: '';
   };
   options: {
