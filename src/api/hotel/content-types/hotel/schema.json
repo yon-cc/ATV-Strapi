@@ -24,16 +24,6 @@
     "Descripcion": {
       "type": "text"
     },
-    "Habitaciones": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::habitacion.habitacion"
-    },
-    "restaurantes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::restaurante.restaurante"
-    },
     "ImagenCarousel1": {
       "type": "string"
     },

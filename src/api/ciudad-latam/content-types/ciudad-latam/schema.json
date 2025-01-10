@@ -18,11 +18,6 @@
     "Slogan": {
       "type": "text"
     },
-    "Actividades": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::tarjeta.tarjeta"
-    },
     "Hoteles": {
       "type": "relation",
       "relation": "oneToMany",
@@ -40,14 +35,6 @@
     "DestinoPlaya": {
       "type": "boolean"
     },
-    "SurAmerica": {
-      "type": "boolean"
-    },
-    "PreguntasFrecuentes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pregunta-frecuente.pregunta-frecuente"
-    },
     "InformacionGeneral": {
       "type": "text"
     },
@@ -58,6 +45,13 @@
     },
     "VideoBanner": {
       "type": "string"
+    },
+    "Contenido": {
+      "type": "dynamiczone",
+      "components": [
+        "contenido-ciudad.paquete",
+        "contenido-ciudad.hoteles"
+      ]
     }
   }
 }

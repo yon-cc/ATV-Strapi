@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hoteles_paquetes",
+  "info": {
+    "displayName": "Paquete",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Paquete": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::boda-ciudad.boda-ciudad"
+    }
+  }
+}

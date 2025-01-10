@@ -872,7 +872,7 @@ export interface ApiCircuitoCiudadCircuitoCiudad extends Schema.CollectionType {
   info: {
     singularName: 'circuito-ciudad';
     pluralName: 'circuito-ciudads';
-    displayName: 'CircuitoCiudad';
+    displayName: 'Circuito Ciudad';
     description: '';
   };
   options: {
@@ -914,11 +914,6 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
   attributes: {
     Nombre: Attribute.String;
     Slogan: Attribute.Text;
-    Actividades: Attribute.Relation<
-      'api::ciudad-latam.ciudad-latam',
-      'oneToMany',
-      'api::tarjeta.tarjeta'
-    >;
     Hoteles: Attribute.Relation<
       'api::ciudad-latam.ciudad-latam',
       'oneToMany',
@@ -928,12 +923,6 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
     ImagenPrincipal: Attribute.String;
     ImagenTarjeta: Attribute.String;
     DestinoPlaya: Attribute.Boolean;
-    SurAmerica: Attribute.Boolean;
-    PreguntasFrecuentes: Attribute.Relation<
-      'api::ciudad-latam.ciudad-latam',
-      'oneToMany',
-      'api::pregunta-frecuente.pregunta-frecuente'
-    >;
     InformacionGeneral: Attribute.Text;
     Paquete: Attribute.Relation<
       'api::ciudad-latam.ciudad-latam',
@@ -941,6 +930,9 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
       'api::paquete.paquete'
     >;
     VideoBanner: Attribute.String;
+    Contenido: Attribute.DynamicZone<
+      ['contenido-ciudad.paquete', 'contenido-ciudad.hoteles']
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1014,7 +1006,6 @@ export interface ApiDescuentoDescuento extends Schema.CollectionType {
     Titulo: Attribute.String;
     Precio: Attribute.String;
     Detalle: Attribute.String;
-    TieneContenido: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1070,7 +1061,7 @@ export interface ApiDiaPaqueteDiaPaquete extends Schema.CollectionType {
   info: {
     singularName: 'dia-paquete';
     pluralName: 'dia-paquetes';
-    displayName: 'DiaPaquete';
+    displayName: 'Dia Paquete';
     description: '';
   };
   options: {
@@ -1154,16 +1145,6 @@ export interface ApiHotelHotel extends Schema.CollectionType {
     Logo: Attribute.String;
     Precio: Attribute.Text;
     Descripcion: Attribute.Text;
-    Habitaciones: Attribute.Relation<
-      'api::hotel.hotel',
-      'oneToMany',
-      'api::habitacion.habitacion'
-    >;
-    restaurantes: Attribute.Relation<
-      'api::hotel.hotel',
-      'oneToMany',
-      'api::restaurante.restaurante'
-    >;
     ImagenCarousel1: Attribute.String;
     ImagenCarousel2: Attribute.String;
     ImagenCarousel3: Attribute.String;
@@ -1213,7 +1194,6 @@ export interface ApiPaquetePaquete extends Schema.CollectionType {
     Ciudad: Attribute.String;
     TarifaAdulto: Attribute.String;
     TarifaNino: Attribute.String;
-    Categoria: Attribute.Text;
     DiaPaquetes: Attribute.Relation<
       'api::paquete.paquete',
       'oneToMany',

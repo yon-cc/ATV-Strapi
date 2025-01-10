@@ -21,9 +21,6 @@
     "TarifaNino": {
       "type": "string"
     },
-    "Categoria": {
-      "type": "text"
-    },
     "DiaPaquetes": {
       "type": "relation",
       "relation": "oneToMany",

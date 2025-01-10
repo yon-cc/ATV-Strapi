@@ -23,9 +23,6 @@
     },
     "Detalle": {
       "type": "string"
-    },
-    "TieneContenido": {
-      "type": "boolean"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hoteles_hoteles",
+  "info": {
+    "displayName": "Hoteles",
+    "icon": "gate",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Hoteles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hotel.hotel"
+    }
+  }
+}
