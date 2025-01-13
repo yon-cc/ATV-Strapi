@@ -996,6 +996,8 @@ export interface ApiDatosBasicoDatosBasico extends Schema.CollectionType {
     Direccion: Attribute.String;
     EnlaceWhatsapp: Attribute.String;
     EnlaceMaps: Attribute.String;
+    EnlaceFacebook: Attribute.String;
+    EnlaceInstagram: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

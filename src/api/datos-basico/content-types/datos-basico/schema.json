@@ -26,6 +26,12 @@
     },
     "EnlaceMaps": {
       "type": "string"
+    },
+    "EnlaceFacebook": {
+      "type": "string"
+    },
+    "EnlaceInstagram": {
+      "type": "string"
     }
   }
 }
