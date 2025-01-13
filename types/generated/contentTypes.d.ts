@@ -979,6 +979,41 @@ export interface ApiCruceroCrucero extends Schema.CollectionType {
   };
 }
 
+export interface ApiDatosBasicoDatosBasico extends Schema.CollectionType {
+  collectionName: 'datos_basicos';
+  info: {
+    singularName: 'datos-basico';
+    pluralName: 'datos-basicos';
+    displayName: 'Datos Basicos';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Email: Attribute.String;
+    Telefono: Attribute.String;
+    Direccion: Attribute.String;
+    EnlaceWhatsapp: Attribute.String;
+    EnlaceMaps: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::datos-basico.datos-basico',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::datos-basico.datos-basico',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiDescuentoDescuento extends Schema.CollectionType {
   collectionName: 'descuentos';
   info: {
@@ -1262,6 +1297,7 @@ declare module '@strapi/types' {
       'api::circuito-ciudad.circuito-ciudad': ApiCircuitoCiudadCircuitoCiudad;
       'api::ciudad-latam.ciudad-latam': ApiCiudadLatamCiudadLatam;
       'api::crucero.crucero': ApiCruceroCrucero;
+      'api::datos-basico.datos-basico': ApiDatosBasicoDatosBasico;
       'api::descuento.descuento': ApiDescuentoDescuento;
       'api::descuento-emergente.descuento-emergente': ApiDescuentoEmergenteDescuentoEmergente;
       'api::dia-paquete.dia-paquete': ApiDiaPaqueteDiaPaquete;

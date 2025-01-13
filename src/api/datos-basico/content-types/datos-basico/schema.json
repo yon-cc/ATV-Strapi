@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "datos_basicos",
+  "info": {
+    "singularName": "datos-basico",
+    "pluralName": "datos-basicos",
+    "displayName": "Datos Basicos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "string"
+    },
+    "Telefono": {
+      "type": "string"
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "EnlaceWhatsapp": {
+      "type": "string"
+    },
+    "EnlaceMaps": {
+      "type": "string"
+    }
+  }
+}
