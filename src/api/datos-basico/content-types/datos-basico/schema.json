@@ -22,16 +22,16 @@
       "type": "string"
     },
     "EnlaceWhatsapp": {
-      "type": "string"
+      "type": "text"
     },
     "EnlaceMaps": {
-      "type": "string"
+      "type": "text"
     },
     "EnlaceFacebook": {
-      "type": "string"
+      "type": "text"
     },
     "EnlaceInstagram": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

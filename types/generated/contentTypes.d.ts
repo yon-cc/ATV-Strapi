@@ -994,10 +994,10 @@ export interface ApiDatosBasicoDatosBasico extends Schema.CollectionType {
     Email: Attribute.String;
     Telefono: Attribute.String;
     Direccion: Attribute.String;
-    EnlaceWhatsapp: Attribute.String;
-    EnlaceMaps: Attribute.String;
-    EnlaceFacebook: Attribute.String;
-    EnlaceInstagram: Attribute.String;
+    EnlaceWhatsapp: Attribute.Text;
+    EnlaceMaps: Attribute.Text;
+    EnlaceFacebook: Attribute.Text;
+    EnlaceInstagram: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
