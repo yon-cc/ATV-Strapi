@@ -39,6 +39,9 @@
         "contenido-ciudad.paquete",
         "contenido-ciudad.hoteles"
       ]
+    },
+    "Playa": {
+      "type": "boolean"
     }
   }
 }

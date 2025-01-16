@@ -922,6 +922,7 @@ export interface ApiCiudadLatamCiudadLatam extends Schema.CollectionType {
     Contenido: Attribute.DynamicZone<
       ['contenido-ciudad.paquete', 'contenido-ciudad.hoteles']
     >;
+    Playa: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
