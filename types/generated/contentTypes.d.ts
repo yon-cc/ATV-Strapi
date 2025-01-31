@@ -1134,7 +1134,7 @@ export interface ApiHotelHotel extends Schema.CollectionType {
   attributes: {
     Nombre: Attribute.String;
     Logo: Attribute.String;
-    Precio: Attribute.Text;
+    PrecioAntes: Attribute.String;
     Descripcion: Attribute.Text;
     ImagenCarousel1: Attribute.String;
     ImagenCarousel2: Attribute.String;
@@ -1152,6 +1152,8 @@ export interface ApiHotelHotel extends Schema.CollectionType {
     RestauranteBento1: Attribute.String;
     RestauranteBento2: Attribute.String;
     RestauranteBento3: Attribute.String;
+    PrecioAhora: Attribute.String;
+    Duracion: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

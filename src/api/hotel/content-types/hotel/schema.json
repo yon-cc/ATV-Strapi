@@ -18,8 +18,8 @@
     "Logo": {
       "type": "string"
     },
-    "Precio": {
-      "type": "text"
+    "PrecioAntes": {
+      "type": "string"
     },
     "Descripcion": {
       "type": "text"
@@ -70,6 +70,12 @@
       "type": "string"
     },
     "RestauranteBento3": {
+      "type": "string"
+    },
+    "PrecioAhora": {
+      "type": "string"
+    },
+    "Duracion": {
       "type": "string"
     }
   }
