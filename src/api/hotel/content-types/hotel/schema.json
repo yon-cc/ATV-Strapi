@@ -77,9 +77,6 @@
     },
     "Duracion": {
       "type": "string"
-    },
-    "Precio": {
-      "type": "text"
     }
   }
 }
